@@ -18,4 +18,22 @@ OUTPUT
 stampo messaggio
 */
 
+let message= "";
+const Num1Str = prompt("Scegli il primo numero")
+const Num2Str= prompt("Scegli il secondo numero ")
 
+const Num1= parseInt(Num1Str);
+const Num2= parseInt(Num2Str);
+
+if (isNaN(Num1Str) || isNaN(Num2Str)) {
+    console.log("Devi inserire un numero, ricarica la pagina!")
+} else {
+
+
+
+
+
+
+
+    
+}
