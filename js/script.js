@@ -14,3 +14,7 @@ p over 65 = 0,21 * km * (1-0,40)
 OUTPUT
 stampo messaggio
 */
+
+let message= "";
+const age = prompt("Quanti anni hai?");
+const km = prompt("Quanti km devi percorrere?");
