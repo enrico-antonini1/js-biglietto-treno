@@ -17,18 +17,25 @@ stampo messaggio
 
 let message = "";
 const age = prompt("Quanti anni hai?");
-const km = prompt("Quanti km devi percorrere?");
+const kmStr = prompt("Quanti km devi percorrere?");
 
-const prezzoIntero = "0,21" * km;
-const prezzo18 = prezzoIntero * ("1-0,20")
-const prezzoO65 = prezzoIntero * ("1-0,40")
+const km = parseInt(kmStr);
 
-if (age <= 18) {
-    message = `Il prezzo del biglietto è ${prezzo18}`;
-} else if (age >= 65) {
-    message = `Il prezzo del biglietto è ${prezzoO65}`;
-}
-else {
-    message = `Il prezzo del biglietto è ${prezzoInterno}`;
-}
+const prezzoIntero = 0.21 * km;
+const prezzo18 = prezzoIntero * (1-0.2);
+const prezzoO65 = prezzoIntero * (1-0.4);
+
+// console.log(prezzoIntero)
+// console.log(prezzo18)
+console.log(prezzoO65)
+
+
+ if (age <= 18) {
+     message = `Il prezzo del biglietto è ${prezzo18}`;
+ } else if (age >= 65) {
+     message = `Il prezzo del biglietto è ${prezzoO65}`;
+ }
+ else {
+     message = `Il prezzo del biglietto è ${prezzoInterno}`;
+ }
 
